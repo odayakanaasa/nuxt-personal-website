@@ -64,6 +64,7 @@ gulp.task('js', function () {
 
 /*
  * Command 'gulp watch'
+ *
  */
 gulp.task('watch', function () {
   gulp.watch(assetPath + 'sass/*.scss', ['sass']);
