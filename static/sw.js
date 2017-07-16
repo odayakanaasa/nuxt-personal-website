@@ -19,48 +19,48 @@ importScripts('workbox-sw.prod.v1.1.0.js');
  */
 const fileManifest = [
   {
-    "url": "0.nuxt.bundle.50f46d8c2b83e6ee5837.js",
-    "revision": "18789af41774c06d4b86ad057f61d69c"
+    "url": "0.nuxt.bundle.c4743c18ae748e366ae5.js",
+    "revision": "0d8c04d17fad5289cdd4f8cad564a87a"
   },
   {
-    "url": "1.nuxt.bundle.68acca552555d449e79e.js",
-    "revision": "6d87aeab2528faa311dc0b45565bdb64"
+    "url": "1.nuxt.bundle.ecbd1c61b9e1ff605888.js",
+    "revision": "4d11f2a7c4ed9c59d4881bdbc7060319"
   },
   {
-    "url": "2.nuxt.bundle.3d41e0f99e7f5322d5d9.js",
-    "revision": "dae3e4a79b0a7d6e2a24dfc3bf5ceec4"
+    "url": "2.nuxt.bundle.586e8d30fd139f8c8f30.js",
+    "revision": "ec93c25ab8efdbed62568a79442640d3"
   },
   {
-    "url": "3.nuxt.bundle.e92a4fdba18a3a94740e.js",
-    "revision": "deb1fa9938517c2fc41923f33f61595d"
+    "url": "3.nuxt.bundle.77b08070ff70d294c522.js",
+    "revision": "e85fa6062ea66d41b203d11e6cc42659"
   },
   {
     "url": "client-manifest.json",
-    "revision": "80272253b6e11c90bb1ceb72ed2cec27"
+    "revision": "82ee69d9be23d20da1e505774e3d0fb7"
   },
   {
     "url": "index.html",
-    "revision": "744fb1c184ce0e85af057191b683d6a2"
+    "revision": "6ba2b8d7183b39555a0a6b5fa4fb9fe4"
   },
   {
-    "url": "manifest.85fff83171d029a52a9a.js",
-    "revision": "3bd0f4a2131c1ce48d60605c793cc51f"
+    "url": "manifest.1ccf5b5a1defc7ca18ba.js",
+    "revision": "48c4f2e23d1c3ad3a006cb92ce27e4fe"
   },
   {
     "url": "manifest.c739f99e.json",
     "revision": "64b460ea29d44eeff590258be5d41154"
   },
   {
-    "url": "nuxt.bundle.73afadd45b1a5a659856.js",
-    "revision": "9651c8e07e35c758482dd44d7101e672"
+    "url": "nuxt.bundle.abc63d12b6b2a5cbbbdf.js",
+    "revision": "e67557fe1b5bd7b719442b3053b1e0dc"
   },
   {
     "url": "server-bundle.json",
-    "revision": "e0c738281c520b2de4b8569fab87ec17"
+    "revision": "7c2d6fa63393d069c5ab8998108b083e"
   },
   {
-    "url": "vendor.bundle.33631a5f1a67f5f2f11a.js",
-    "revision": "7e34e700ee74462c60811cf8b5fd1ffd"
+    "url": "vendor.bundle.808d083ec83f602947c5.js",
+    "revision": "a7fad9861547e1cf17fb6dbdaafa59d1"
   }
 ];
 
