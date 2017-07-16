@@ -1,0 +1,42 @@
+$font-primary: 'Montserrat', Helvetica, serif;
+
+
+// Overrides
+$grid-gutter-width: 40px !default;
+$border-radius-base:  4px !default;
+$padding-base-vertical: 14px !default;
+
+$brand-primary: #FF5543;
+
+$brand-white: #fff;
+$brand-black: #000;
+$brand-success: #000;
+$brand-darker: #444;
+$brand-gray: #ccc;
+$brand-info: #fff;
+$brand-warning: red;
+$brand-danger: red;
+$brand-lighter: #e9e9e9;
+$brand-body-color: #818892;
+$brand-selection-color: #f9f6f0;
+$brand-overlay-color: #4c4a8a;
+$brand-bg-color: $brand-white;
+
+
+$input-border-focus:  $brand-primary !default;
+$form-group-margin-bottom:       30px !default;
+
+//menu
+$items: 2;
+$transition-duration: 0.5s;
+$transition-delay: 0.05s;
+
+.bg-red {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…B3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=);
+  background-size: 100%;
+  background-image: -moz-linear-gradient(320deg, #ff3b30,#ff624d);
+  background-image: -webkit-linear-gradient(320deg, #ff3b30,#ff624d);
+  background-image: linear-gradient(130deg, #ff3b30,#ff624d);
+  color: #ffffff;
+
+}

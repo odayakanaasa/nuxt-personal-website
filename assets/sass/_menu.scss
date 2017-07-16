@@ -1,0 +1,145 @@
+/*Header nav */
+
+nav {
+  //transition: padding 1s cubic-bezier(.25,.8,.25,1),background-color .3s cubic-bezier(.25,.8,.25,1),box-shadow .6s;
+  border-color: transparent;
+  color: #000 !important;
+  padding:30px 0 20px 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  -webkit-box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  -webkit-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  -ms-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  transition: all 600ms ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: all 300ms ease-in-out 0s;
+  &:not(.scrolled){
+    background-color: rgba(255,255,255,0);
+    a {
+      color: #ffffff !important;
+    }
+  }
+  &.scrolled {
+    background-color: #fff !important;
+    -moz-transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
+    transform: translateY(-30%);
+    a {
+      color:#000 !important;
+    }
+  }
+}
+
+
+.full {
+  @extend .bg-red;
+  width: 100%;
+  height: 80vh;
+  padding-top:20vh;
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($brand-primary,.9);
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: rgba(255,255,255,1);
+  }
+  h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 300;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    span{
+      padding: 4px 15px;
+      position: relative;
+      &:before{
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 30px;
+        height: 4px;
+        content: '';
+        background: $brand-white;
+        margin-left: -30px;
+      }
+      &:after{
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 30px;
+        height: 4px;
+        content: '';
+        background: $brand-white;
+        margin-right: -30px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 34px;
+      span{
+        &:before{
+          top: 28px;
+          width: 20px;
+          height: 3px;
+          margin-left: -15px;
+        }
+        &:after{
+          top: 28px;
+          width: 20px;
+          height: 3px;
+          margin-right: -15px;
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  h3{
+    font-size: 16px;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+    span{
+    }
+  }
+  .profile-thumb{
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background: url('/img/portfolio-1.jpg');
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    @include border-radius(50%);
+  }
+  .social-icons {
+    li {
+      a {
+        color: $brand-white;
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
