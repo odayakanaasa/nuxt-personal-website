@@ -10,7 +10,6 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      //{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' },
       { rel: 'stylesheet', href: '/css/app.min.css' },
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' }
@@ -69,7 +68,7 @@ module.exports = {
   plugins: [],
   modules: [
     //'@nuxtjs/bootstrap-vue',
-    '@nuxtjs/font-awesome',
+    //'@nuxtjs/font-awesome',
     { src: '@nuxtjs/pwa', options: { icon: { sizes: [512, 192, 380 ] } } },
     /* ['@nuxtjs/google-analytics', { ua: 'YOUR_ANALYTICS_ID' }], */
     ['@nuxtjs/markdownit', { html: true, linkify: true, breaks: true }]

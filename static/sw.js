@@ -40,27 +40,27 @@ const fileManifest = [
   },
   {
     "url": "client-manifest.json",
-    "revision": "16775dd73337d5e503b2edb6a8e3c8d3"
+    "revision": "b722148f3badd13516b429295986a97e"
   },
   {
     "url": "index.html",
     "revision": "6ba2b8d7183b39555a0a6b5fa4fb9fe4"
   },
   {
-    "url": "manifest.9a937640076d4eb0c552.js",
-    "revision": "3272b4953dbee11dbc60230cabd1d054"
+    "url": "manifest.3242aebd0beae818f462.js",
+    "revision": "40c70199c7f48f2f1f1f2f2fc02b2871"
   },
   {
     "url": "manifest.c739f99e.json",
     "revision": "64b460ea29d44eeff590258be5d41154"
   },
   {
-    "url": "nuxt.bundle.e4286a69911694e235d2.js",
-    "revision": "38be58d77a5e4f226651d11fb3226ace"
+    "url": "nuxt.bundle.712cffab1eb947a2acb2.js",
+    "revision": "bca3949ef3ce2e1acfefed1894320676"
   },
   {
     "url": "server-bundle.json",
-    "revision": "9265d37aef5c9fa56f99a66b385c58f3"
+    "revision": "68bcf422e23d0d30d606b7501b64f53e"
   },
   {
     "url": "vendor.bundle.d3678e03ca7022e4bc7f.js",
