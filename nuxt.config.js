@@ -10,7 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      //{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' },
       { rel: 'stylesheet', href: '/css/app.min.css' },
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' }
