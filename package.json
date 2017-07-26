@@ -1,6 +1,10 @@
 {
   "name": "vuecms",
   "version": "0.1.0",
+  "engines" : {
+    "node" : "8.0.0",
+    "npm": "5.3.0"
+  },
   "description": "VueJS News",
   "author": "Andre Liem <andre.liem@gmail.com>",
   "license": "MIT",
@@ -22,7 +26,7 @@
     "gulp-uglify": "^3.0.0",
     "merge-stream": "^1.0.1",
     "nuxt": "latest",
-    "vue-scroll-reveal": "^1.0.1"
+    "vue-scroll-reveal": "^1.0.1",
   },
   "scripts": {
     "dev": "nuxt",
