@@ -69,7 +69,7 @@ module.exports = {
   plugins: [],
   modules: [
     //'@nuxtjs/bootstrap-vue',
-    //'@nuxtjs/font-awesome',
+    '@nuxtjs/font-awesome',
     { src: '@nuxtjs/pwa', options: { icon: { sizes: [512, 192, 380 ] } } },
     /* ['@nuxtjs/google-analytics', { ua: 'YOUR_ANALYTICS_ID' }], */
     ['@nuxtjs/markdownit', { html: true, linkify: true, breaks: true }]
