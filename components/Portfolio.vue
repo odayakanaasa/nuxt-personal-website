@@ -2,8 +2,8 @@
     <section class="portfolio grey-gradient-tb">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center heading">
-                    <h2>Work</h2>
+                <div class="col-md-8 col-md-offset-2 text-left heading">
+                    <h2>Some chunks of my work</h2>
                 </div>
             </div>
             <div class="row portfolio-results margin-top-40">
@@ -22,13 +22,17 @@
 
 <script>
     export default {
-        data() {
-            return {
-                portfolioElements: this.$i18n.t('portfolio'),
-                filter: null,
-                search: '',
-                open: false
+      data () {
+        return {
+          portfolioElements: [
+            {
+              name: 'Mushin',
+              description: 'acilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit',
+              identifiant: 'mushin',
+              categories: ['website', 'startup']
             }
+          ]
         }
+      }
     }
 </script>

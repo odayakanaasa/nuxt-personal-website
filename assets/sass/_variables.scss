@@ -12,16 +12,16 @@ $brand-white: #fff;
 $brand-black: #000;
 $brand-success: #000;
 $brand-darker: #444;
-$brand-gray: #ccc;
+$brand-grey: #eceeef;
 $brand-info: #fff;
-$brand-warning: red;
-$brand-danger: red;
 $brand-lighter: #e9e9e9;
-$brand-body-color: #818892;
+$brand-body-color: #818a91;
 $brand-selection-color: #f9f6f0;
 $brand-overlay-color: #4c4a8a;
 $brand-bg-color: $brand-white;
-
+$brand-red: #fc6767;
+$brand-warning: $brand-red;
+$brand-danger: $brand-red;
 
 $input-border-focus:  $brand-primary !default;
 $form-group-margin-bottom:       30px !default;

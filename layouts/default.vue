@@ -1,56 +1,64 @@
 <template>
   <div id="page">
     <header>
-      <nav  v-bind:class="[scrolled ? activeClass : '', defaultClass]">
-        <nuxt-link class="nav-item" to="/">Home</nuxt-link>
-        <nuxt-link class="nav-item" to="/about">About</nuxt-link>
+      <nav v-bind:class="[scrolled ? activeClass : '', defaultClass]">
+        <div class="container">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Navbar</a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-end">
+              <li class="nav-item ">
+                <nuxt-link class="nav-link" to="/">Home</nuxt-link>
+              </li>
+              <li class="nav-item ">
+                <nuxt-link class="nav-link" to="/about">About</nuxt-link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <div class="full container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <div class="profile-thumb"></div>
-          <h1><span>Hello my name is Baptistenpm install @nuxtjs/pwa</span></h1>
-          <h3><span>Web Developer / Freelancer</span></h3>
-        </div>
-      </div>
-    </div>
+
     <nuxt/>
     <section class="bg-red">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center">
-            <h3 class="thin"></h3>
-            <p></p>
-            <ul class="social-icons list-unstyled">
-              <li><a class="hover-shrink" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a class="hover-shrink" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              <li><a class="hover-shrink" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-            </ul>
+          <div class="col-md-12 text-center">
+            <h2>Hire Me!</h2>
+            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+            <a href="#" class="btn btn-default btn-lg cta-btn">Contact Me</a>
           </div>
         </div>
       </div>
     </section>
     <footer>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
           <p>&copy; {{ date }}  Free HTML5 Template. All Rights Reserved. <br>Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
+        </div>
+        <div class="col-md-6">
+          <social />
         </div>
       </div>
     </footer>
-    <div v-bind:class="[scrolled ? activeArrow : '', defaultArrow]">
-      <a href="#" class="js-gotop" v-on:click="goToTop"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
-    </div>
   </div>
 </template>
 
 <script>
+  import Social from '~components/Social.vue'
+
   export default {
+    components: {
+      Social
+    },
     data () {
       return {
         scrolled: false,
         activeClass: 'scrolled',
-        defaultClass: 'nav navbar navbar-fixed-top',
+        defaultClass: 'navbar navbar-toggleable-md',
         defaultArrow: 'gototop js-top',
         activeArrow: 'gototop js-top active',
         date: Date.now()
@@ -66,9 +74,6 @@
       window.removeEventListener('scroll', this.handleScroll)
     },
     methods: {
-      path (url) {
-        return (this.$i18n.locale === 'en' ? url : '/' + this.$i18n.locale + url)
-      },
       handleScroll () {
         if ((document.body.scrollHeight > 0) && (document.body.scrollTop !== 0)) {
           this.scrolled = true
@@ -76,15 +81,6 @@
           // $('nav').removeClass('scrolled');
           this.scrolled = false
         }
-      },
-      goToTop (event) {
-        event.preventDefault()
-
-        /* $('html, body').animate({
-         scrollTop: $('html').offset().top
-         }, 500, 'easeInOutExpo');
-
-         return false; */
       }
     }
   }

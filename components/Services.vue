@@ -2,19 +2,17 @@
     <section class="services grey-gradient-tb">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center heading">
+                <div class="col-md-8 col-md-offset-2 text-left heading">
                     <h2>My Services</h2>
                 </div>
             </div>
             <div class="row margin-top-40">
-                <div v-for="offer in offers" class="col-md-4 text-center">
-                    <div class="feature-left">
-                        <span class="icon">
-                            <i v-bind:class="offer.icon"></i>
-                        </span>
+                <div v-for="skill in offers" class="col-md-4 text-center">
+                    <div class="feature-card skills">
+                        <span class="icon" v-bind:style="{backgroundImage: 'url(/img/' + skill.icon + '.svg)'}"></span>
                         <div class="feature-copy">
-                            <h3>{{ offer.name }}</h3>
-                            <p>{{ offer.description }}</p>
+                            <h3>{{ skill.name }}</h3>
+                            <p v-html="skill.description"></p>
                         </div>
                     </div>
                 </div>
@@ -25,13 +23,17 @@
 
 <script>
     export default {
-        // data must be a function with vue components
-        data() {
-            return {
-                offers: [
-                    { name: 'test', description: 'description', icon: '' }
-                ]
-            }
+      data () {
+        return {
+          offers: [
+            { name: 'Google Analytics Certified', description: 'I passed the certification this year to show off my Analytics skills, which is a much as far as I\'m concerned. <a href="https://www.google.com/partners/#i_profile;idtf=105683438641654386744;" target="_blank">View it!</a>', icon: 'laptop' },
+            { name: 'Team Management and Leadership', description: '', icon: 'thumbs_up' },
+            { name: 'Project Management and Team spirit', description: '<a href="https://www.linkedin.com/in/bdebever/#ember4104" target="_blank">Read some testimonials!</a>', icon: 'lightbulb_idea' },
+            { name: 'Wordpress Theme Development', description: 'I have been building Wordpress stuff for a while now, and I keep it going.', icon: 'laptop' },
+            { name: 'Vue.js', description: 'I am in love of this blazing fast javascript Framework', icon: 'fountain_pen' },
+            { name: 'Laravel', description: 'Except a school project (building an intranet), I can\'t tell you much for the time being, but trust me, exciting things to come thanks to this MVC PHP exciting Framework..', icon: 'cloud' }
+          ]
         }
+      }
     }
 </script>

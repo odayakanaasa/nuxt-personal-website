@@ -25,11 +25,7 @@ gulp.task('sass', function () {
   var scssStream = gulp.src(assetPath + 'sass/*.scss')
     .pipe(sass({
       outputStyle: 'nested',
-      precison: 3,
-      includePaths: [
-        './node_modules/bootstrap-sass/assets/stylesheets',
-        './node_modules/font-awesome/scss',
-      ]
+      precison: 3
     }))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
@@ -38,6 +34,7 @@ gulp.task('sass', function () {
     .pipe(cleanCSS({ advanced : true }))
     .pipe(concat('scss-asssets.scss'))
   var cssStream = gulp.src([
+    './node_modules/bootstrap/dist/css/bootstrap.min.css'
   ])
     .pipe(concat('css-asssets.css'))
     .pipe(cleanCSS({ advanced : true }))
@@ -54,7 +51,8 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
   // returns a Node.js stream, but no handling of error messages
   return gulp.src([
-    assetPath + 'js/*.js'
+    assetPath + 'js/*.js',
+    './node_modules/bootstrap/dist/js/bootstrap.min.js'
   ])
     .pipe(concat('app.min.js'))
     .pipe(uglify())

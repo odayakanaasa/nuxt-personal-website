@@ -3,8 +3,7 @@
 nav {
   //transition: padding 1s cubic-bezier(.25,.8,.25,1),background-color .3s cubic-bezier(.25,.8,.25,1),box-shadow .6s;
   border-color: transparent;
-  color: #000 !important;
-  padding:30px 0 20px 0;
+  padding:30px 2em 20px 1em !important;
   box-shadow: 0 8px 25px rgba(0,0,0,0.06);
   -webkit-box-shadow: 0 8px 25px rgba(0,0,0,0.06);
   -webkit-transition: all 600ms ease;
@@ -21,125 +20,72 @@ nav {
   &:not(.scrolled){
     background-color: rgba(255,255,255,0);
     a {
-      color: #ffffff !important;
+      color: $brand-body-color;
     }
   }
   &.scrolled {
     background-color: #fff !important;
-    -moz-transform: translateY(-30%);
-    -webkit-transform: translateY(-30%);
+    -moz-transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
     transform: translateY(-30%);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding-top:30px;
     a {
-      color:#000 !important;
+      color:$brand-body-color;
     }
   }
-}
-
-
-.full {
-  @extend .bg-red;
-  width: 100%;
-  height: 80vh;
-  padding-top:20vh;
-  .overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba($brand-primary,.9);
-  }
-
-  h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-    color: rgba(255,255,255,1);
-  }
-  h1 {
-    margin-bottom: 30px;
-    font-size: 50px;
-    line-height: 1.3;
-    font-weight: 300;
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    -o-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    span{
-      padding: 4px 15px;
-      position: relative;
-      &:before{
-        position: absolute;
-        top: 40px;
-        left: 0;
-        width: 30px;
-        height: 4px;
-        content: '';
-        background: $brand-white;
-        margin-left: -30px;
-      }
-      &:after{
-        position: absolute;
-        top: 40px;
-        right: 0;
-        width: 30px;
-        height: 4px;
-        content: '';
-        background: $brand-white;
-        margin-right: -30px;
-      }
+  .collapse {
+    @media (min-width:1024px) {
+      float:right;
     }
-    @media screen and (max-width: 768px) {
-      font-size: 34px;
-      span{
-        &:before{
-          top: 28px;
-          width: 20px;
-          height: 3px;
-          margin-left: -15px;
+    .navbar-nav {
+      .nav-item {
+        a {
+          color: $brand-black;
+          position:relative;
+          &:after {
+            content: '';
+            display: block;
+            height: 5px;
+            position: absolute;
+            left: 0.5em;
+            right: 0.5em;
+            bottom: -5px;
+            -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            -ms-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition: -webkit-transform .3s cubic-bezier(.86,0,.07,1);
+            transition: -webkit-transform .3s cubic-bezier(.86,0,.07,1);
+            -o-transition: transform .3s cubic-bezier(.86,0,.07,1);
+            transition: transform .3s cubic-bezier(.86,0,.07,1);
+            transition: transform .3s cubic-bezier(.86,0,.07,1),-webkit-transform .3s cubic-bezier(.86,0,.07,1);
+          }
         }
-        &:after{
-          top: 28px;
-          width: 20px;
-          height: 3px;
-          margin-right: -15px;
+        .nuxt-link-exact-active {
+          &:after {
+            background-color: $brand-red;
+            -webkit-transform: none !important;
+            -ms-transform: none !important;
+            transform: none !important;
+          }
         }
-      }
-    }
-  }
-  h2 {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-  }
-  h3{
-    font-size: 16px;
-    @media screen and (max-width: 768px) {
-      font-size: 14px;
-    }
-    span{
-    }
-  }
-  .profile-thumb{
-    background-size: cover !important;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background: url('/img/portfolio-1.jpg');
-    position: relative;
-    height: 200px;
-    width: 200px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    @include border-radius(50%);
-  }
-  .social-icons {
-    li {
-      a {
-        color: $brand-white;
-        i {
-          font-size: 30px;
+        &:hover, &:focus, &:active {
+          a {
+            &:after {
+              -webkit-transform: scaleX(1);
+              -ms-transform: scaleX(1);
+              transform: scaleX(1);
+              background-color: $brand-grey;
+            }
+          }
         }
       }
     }
   }
 }
+

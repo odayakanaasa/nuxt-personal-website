@@ -16,13 +16,12 @@
 
 <script>
     export default {
-        // data must be a function with vue components
-        data() {
-            return {
-                offers: [
-                    { name: 'Branding', description: 'description', icon: 'icon-test' },
-                ]
-            }
+      data () {
+        return {
+          offers: [
+            { name: 'Branding', description: 'description', icon: 'icon-test' }
+          ]
         }
+      }
     }
 </script>

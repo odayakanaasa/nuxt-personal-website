@@ -109,18 +109,5 @@
 </template>
 
 <script>
-    export default {
-        // data must be a function with vue components
-        data() {
-            return {
 
-            }
-        },
-        mounted: () => {
-            window.sr = ScrollReveal();
-            sr.reveal('.timeline-unverted');
-            sr.reveal('.timeline-inverted');
-            sr.reveal('h2');
-        }
-    }
 </script>
