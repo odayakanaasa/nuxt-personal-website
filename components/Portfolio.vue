@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="row portfolio-results margin-top-40">
-                <div v-for="element in portfolioElements" class="col-md-3 text-center col-padding">
+                <div v-for="element in portfolioElements" class="col-md-4 text-center col-padding">
                     <a href="#" class="work" v-bind:id="element.identifiant">
                         <div class="desc">
                             <h3>{{ element.name }}</h3>
@@ -30,6 +30,18 @@
               description: 'acilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit',
               identifiant: 'mushin',
               categories: ['website', 'startup']
+            },
+            {
+              name: 'Raphaële Fabre',
+              description: 'acilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit',
+              identifiant: 'fabre',
+              categories: ['website', 'avocat']
+            },
+            {
+              name: 'Clémence & Margaux',
+              description: 'acilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit',
+              identifiant: 'infitex',
+              categories: ['website', 'avocat']
             }
           ]
         }

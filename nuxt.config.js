@@ -3,30 +3,29 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Vue Static CMS',
+    title: 'Baptiste Debever\'s personal website',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Baptiste Debever - I am an Engineering Managerial Student, but also Full-Stack Web Developer and Freelance.' }
     ],
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' },
-      { rel: 'stylesheet', href: '/css/app.min.css' },
-      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' }
+      { rel: 'stylesheet', href: '/css/app.min.css' }
     ]
   },
   generate: {
     routes: [
       '/',
       '/hello-static-blogging',
-      '/foo-bar',
       '/about'
     ]
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#FF5543' },
   /*
   ** Build configuration
   */
@@ -67,8 +66,7 @@ module.exports = {
   ],
   plugins: [],
   modules: [
-    //'@nuxtjs/bootstrap-vue',
-    //'@nuxtjs/font-awesome',
+    '@nuxtjs/font-awesome',
     { src: '@nuxtjs/pwa', options: { icon: { sizes: [512, 192, 380 ] } } },
     /* ['@nuxtjs/google-analytics', { ua: 'YOUR_ANALYTICS_ID' }], */
     ['@nuxtjs/markdownit', { html: true, linkify: true, breaks: true }]
@@ -77,7 +75,7 @@ module.exports = {
    ** Customize manifest.json
    */
   manifest: {
-    name: "Nuxt.js",
-    theme_color: "#3B8070"
+    name: 'Baptiste Debever',
+    theme_color: '#FF5543'
   }
 }

@@ -1,0 +1,29 @@
+.post {
+  padding:0 ;
+  display:block;
+  .image-post {
+    display:block;
+    height:150px;
+    background: no-repeat center;
+    background-size:cover;
+    margin-bottom:10px;
+    width:100%;
+  }
+  .content {
+    padding:1.4em;
+    h4 {
+      font-size:1.6em;
+    }
+    .add-info {
+      color: $brand-body-color;
+      text-transform: uppercase;
+    }
+  }
+}
+
+article {
+  margin: 40px auto;
+  h2, h3, p, pre, span {
+    text-align:left;
+  }
+}

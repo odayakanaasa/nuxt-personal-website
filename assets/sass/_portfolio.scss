@@ -2,8 +2,12 @@
   background-image: url('/img/mushin-portfolio.jpg');
 }
 
-#oandb {
-  background-image: url('/img/portfolio-1.jpg');
+#fabre {
+  background-image: url('/img/raphaele-fabre-iphone.jpg');
+}
+
+#infitex {
+  background-image: url('/img/clemence-margaux-ipad.jpg');
 }
 
 
@@ -57,7 +61,7 @@
   .desc{
     display: table-cell;
     vertical-align: middle;
-    height: 270px;
+    height: 370px;
     background: $brand-white;
     opacity: 0;
     @include transition(.3s);
@@ -67,10 +71,13 @@
       transition: transform 0.3s, opacity 0.3s;
       -webkit-transform: translate3d(0, -15px, 0);
       transform: translate3d(0, -15px, 0);
+      color: darken($brand-red, 30%);
+      text-transform:none;
     }
     span{
       display: block;
-      color: lighten($brand-black,60%);
+      color: darken($brand-black,60%);
+      text-transform:none;
       font-size: 14px;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
       transition: transform 0.3s, opacity 0.3s;

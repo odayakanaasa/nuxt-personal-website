@@ -1,5 +1,5 @@
 <template>
-  <div class="post">
+  <div class="post-content">
     <div v-html="postContent"></div>
   </div>
 </template>
@@ -9,7 +9,7 @@
     head () {
       let post = this.post
       return {
-        title: 'Andre Liem',
+        title: post.meta.name + ' | Baptiste Debever',
         meta: [
           {
             hid: post.meta.id,
@@ -30,20 +30,6 @@
       postContent () {
         let post = this.$store.state.post
         return require(`../../content/posts/${post.id}.md`)
-      },
-      disqusShortname () {
-        return 'your_disqus_short_name'
-      },
-      disqusId () { // env used to avoid re-use from dev to production
-        return `${process.env.NODE_ENV}-${this.disqusShortname}-${this.post.id}`
-      }
-    },
-    watch: {
-      '$route.params.slug' (curr, old) {
-        // disqus does not properly reload just based off the
-        // disqusId computed property - we need to manually change it
-        // when we know it should update
-        this.$refs.disqus.init()
       }
     }
   }

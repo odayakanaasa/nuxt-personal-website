@@ -13,7 +13,6 @@
     data () {
       return {
         socials: [
-          {name: 'Facebook', icon: 'fa fa-facebook', link: ''},
           {name: 'LinkedIn', icon: 'fa fa-linkedin', link: 'https://www.linkedin.com/in/bdebever/'},
           {name: 'Twitter', icon: 'fa fa-twitter', link: 'https://twitter.com/baptistedebever'}
         ]

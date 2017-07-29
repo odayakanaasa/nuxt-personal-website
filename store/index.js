@@ -25,13 +25,15 @@ const makeStore = () => {
         commit('updatePosts', { posts: [
           {
             id: 1,
-            slug: 'hello-static-blogging',
-            title: 'Hello Static Blogging',
-            created_at: '06/27/2017',
+            slug: 'fresh-new-website',
+            title: 'How did I build my new website ?',
+            created_at: '07/27/2017',
+            image: 'mushin-portfolio.jpg',
+            categories: ['web development'],
             meta: {
               id: 1,
-              name: 'Hello Static Blogging',
-              content: 'Hello Static Blogging'
+              name: 'New website out',
+              content: 'New website out'
             }
           },
           {

@@ -1,13 +1,11 @@
 <template>
-    <section class="grey-gradient-bt">
-        <div class="call-to-action">
-            <div class="container">
-                <div class="row animate-box">
-                    <div class="col-md-8 col-md-offset-2 text-center heading">
-                        <h2>Hire Me!</h2>
-                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-                        <p><a href="#" class="btn btn-default btn-lg">Contact Me</a></p>
-                    </div>
+    <section class="bg-red">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Hire Me!</h2>
+                    <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+                    <a href="#" class="btn btn-default btn-lg cta-btn">Contact Me</a>
                 </div>
             </div>
         </div>

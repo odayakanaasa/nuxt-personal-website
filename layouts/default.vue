@@ -1,26 +1,6 @@
 <template>
   <div id="page">
-    <header>
-      <nav v-bind:class="[scrolled ? activeClass : '', defaultClass]">
-        <div class="container">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">Navbar</a>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-content-end">
-              <li class="nav-item ">
-                <nuxt-link class="nav-link" to="/">Home</nuxt-link>
-              </li>
-              <li class="nav-item ">
-                <nuxt-link class="nav-link" to="/about">About</nuxt-link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <HeaderMenu></HeaderMenu>
 
     <nuxt/>
     <section class="bg-red">
@@ -34,53 +14,25 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="row">
-        <div class="col-md-6">
-          <p>&copy; {{ date }}  Free HTML5 Template. All Rights Reserved. <br>Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
-        </div>
-        <div class="col-md-6">
-          <social />
-        </div>
-      </div>
-    </footer>
+
+    <FooterNuxt></FooterNuxt>
+
   </div>
 </template>
 
 <script>
   import Social from '~components/Social.vue'
+  import HeaderMenu from '~components/Header.vue'
+  import FooterNuxt from '~components/Footer.vue'
 
   export default {
     components: {
-      Social
+      Social, HeaderMenu, FooterNuxt
     },
     data () {
       return {
-        scrolled: false,
-        activeClass: 'scrolled',
-        defaultClass: 'navbar navbar-toggleable-md',
         defaultArrow: 'gototop js-top',
-        activeArrow: 'gototop js-top active',
-        date: Date.now()
-      }
-    },
-    mounted () {
-      window.addEventListener('scroll', this.handleScroll)
-      // window.sr = VueScrollReveal()
-      // sr.reveal('.row')
-      // sr.reveal('.feature-left', { duration: 2000 }, 50)
-    },
-    destroyed () {
-      window.removeEventListener('scroll', this.handleScroll)
-    },
-    methods: {
-      handleScroll () {
-        if ((document.body.scrollHeight > 0) && (document.body.scrollTop !== 0)) {
-          this.scrolled = true
-        } else {
-          // $('nav').removeClass('scrolled');
-          this.scrolled = false
-        }
+        activeArrow: 'gototop js-top active'
       }
     }
   }

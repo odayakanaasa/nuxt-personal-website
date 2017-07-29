@@ -1,6 +1,5 @@
 <template>
   <div v-bind:class="{ small : isSmall, large : isLarge }" class="text-center">
-    <img class="me" src="http://vuejsradar.com/assets/img/logo2.png"/>
     <h1 class="site-title" v-bind:class="{ 'mt-3' : isLarge}">
       <router-link :to="{ path: '/'}">Site Title Here</router-link>
     </h1>

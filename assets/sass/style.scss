@@ -8,6 +8,7 @@
 @import "timeline";
 @import "services";
 @import "cta";
+@import "post";
 
 
 
@@ -125,8 +126,6 @@ section {
 .info{
 	margin: 0;
 	padding: 0;
-	width: 90%;
-	float: left;
 	@media screen and (max-width: 768px) {
 		margin-bottom: 3em;
 	}
@@ -211,7 +210,17 @@ section {
 }
 
 footer {
-	padding: 50px;
+	padding: 30px;
+	@media (min-width: 1024px) {
+		.row {
+			.second-right {
+				text-align:right;
+			}
+			p {
+				line-height:50px;
+			}
+		}
+	}
 }
 
 
