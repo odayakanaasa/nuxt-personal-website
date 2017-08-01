@@ -60,9 +60,9 @@
 </template>
 
 <script>
-  import Services from '~components/Services.vue'
-  import Portfolio from '~components/Portfolio.vue'
-  import Social from '~components/Social.vue'
+  import Services from '~/components/Services.vue'
+  import Portfolio from '~/components/Portfolio.vue'
+  import Social from '~/components/Social.vue'
   import Typed from 'typed.js'
 
   export default {

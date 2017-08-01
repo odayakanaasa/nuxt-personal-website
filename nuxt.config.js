@@ -30,7 +30,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    loaders: [
+    extend: [
       {
         test: /\.(png|jpe?g|gif|svg)$/,
         loader: 'url-loader',
@@ -50,7 +50,7 @@ module.exports = {
     ],
     /*
     ** Run ESLINT on save
-    */
+  */
     extend (config, ctx) {
       if (ctx.isClient) {
         config.module.rules.push({
@@ -67,7 +67,8 @@ module.exports = {
   plugins: [],
   modules: [
     '@nuxtjs/font-awesome',
-    { src: '@nuxtjs/pwa', options: { icon: { sizes: [512, 192, 380 ] } } },
+    //'@nuxtjs/sitemap',
+   '@nuxtjs/pwa',
     /* ['@nuxtjs/google-analytics', { ua: 'YOUR_ANALYTICS_ID' }], */
     ['@nuxtjs/markdownit', { html: true, linkify: true, breaks: true }]
   ],
@@ -76,6 +77,9 @@ module.exports = {
    */
   manifest: {
     name: 'Baptiste Debever',
-    theme_color: '#FF5543'
+    short_name: "BD",
+    description: "Baptiste Debever's personal website",
+    theme_color: '#FF5543',
+    //start_url: '/'
   }
 }

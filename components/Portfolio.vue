@@ -8,7 +8,7 @@
             </div>
             <div class="row portfolio-results margin-top-40">
                 <div v-for="element in portfolioElements" class="col-md-4 text-center col-padding">
-                    <a href="#" class="work" v-bind:id="element.identifiant">
+                    <a :href="element.link" class="work" v-bind:id="element.identifiant" target="_blank">
                         <div class="desc">
                             <h3>{{ element.name }}</h3>
                             <span>{{ element.description }}</span>
@@ -27,21 +27,24 @@
           portfolioElements: [
             {
               name: 'Mushin',
-              description: 'acilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit',
+              description: 'Mushin is a fast-growing French tech-startup who recently won an award at the VivaTech contest. This website was built from scratch in collaboration with a designer.',
               identifiant: 'mushin',
-              categories: ['website', 'startup']
+              categories: ['website', 'startup'],
+              link: 'https://mymushin.com'
             },
             {
               name: 'Raphaële Fabre',
               description: 'acilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit',
               identifiant: 'fabre',
-              categories: ['website', 'avocat']
+              categories: ['website', 'avocat'],
+              link: 'https://rfabre-avocat.fr'
             },
             {
               name: 'Clémence & Margaux',
               description: 'acilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit',
               identifiant: 'infitex',
-              categories: ['website', 'avocat']
+              categories: ['website', 'avocat'],
+              link: 'https://clemence-margaux.com'
             }
           ]
         }

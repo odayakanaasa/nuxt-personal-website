@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import Social from '~components/Social.vue'
+  import Social from '~/components/Social.vue'
 
   export default {
     components: {

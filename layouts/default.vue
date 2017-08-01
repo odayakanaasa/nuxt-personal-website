@@ -21,9 +21,9 @@
 </template>
 
 <script>
-  import Social from '~components/Social.vue'
-  import HeaderMenu from '~components/Header.vue'
-  import FooterNuxt from '~components/Footer.vue'
+  import Social from '~/components/Social.vue'
+  import HeaderMenu from '~/components/Header.vue'
+  import FooterNuxt from '~/components/Footer.vue'
 
   export default {
     components: {

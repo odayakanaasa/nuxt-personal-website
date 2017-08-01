@@ -19,59 +19,60 @@ importScripts('workbox-sw.prod.v1.1.0.js');
  */
 const fileManifest = [
   {
-    "url": "0.nuxt.bundle.ca36d6a97505690eb3c7.js",
-    "revision": "c7ebbfca6c0b89204b331e88a6751706"
+    "url": "/_nuxt/0.nuxt.bundle.14ed2351143d0a0dfbdd.js",
+    "revision": "2b50b1d45e140b1289fdd9335c46b280"
   },
   {
-    "url": "1.nuxt.bundle.ed1816c09831be513164.js",
-    "revision": "e6e33cf0485b25ec949135514d2d076f"
+    "url": "/_nuxt/1.nuxt.bundle.347d8c9aedba265b9db1.js",
+    "revision": "ee0988b368d4447452d3782f8a1586e1"
   },
   {
-    "url": "2.nuxt.bundle.60a70a86e308676cb2e7.js",
-    "revision": "f49f9aaed1840f8950a3b4799f2f2427"
+    "url": "/_nuxt/2.nuxt.bundle.a53e4a54ef1c4869eb16.js",
+    "revision": "392eec0e4631752effa7ad9c8153aa86"
   },
   {
-    "url": "3.nuxt.bundle.41a049d656b47745eaeb.js",
-    "revision": "378cb819bc09a46ebd103e05570797a1"
+    "url": "/_nuxt/3.nuxt.bundle.e4c626941c452f17b975.js",
+    "revision": "e47a902c16d5d6311b191a240d674a73"
   },
   {
-    "url": "4.nuxt.bundle.a074d7fabd98cf71d94d.js",
-    "revision": "929b887f133b934c2be9948ed83fe6cc"
+    "url": "/_nuxt/4.nuxt.bundle.a63474171263136bef56.js",
+    "revision": "dd6f5a0e9dc6061ffa225ab52a7af475"
   },
   {
-    "url": "client-manifest.json",
-    "revision": "b722148f3badd13516b429295986a97e"
+    "url": "/_nuxt/index.spa.html",
+    "revision": "be0c3483deb25e094279780725e468ad"
   },
   {
-    "url": "index.html",
-    "revision": "6ba2b8d7183b39555a0a6b5fa4fb9fe4"
+    "url": "/_nuxt/index.ssr.html",
+    "revision": "61e669c2fa8d3fa46e2eb9433088cc5f"
   },
   {
-    "url": "manifest.3242aebd0beae818f462.js",
-    "revision": "40c70199c7f48f2f1f1f2f2fc02b2871"
+    "url": "/_nuxt/manifest.1a20d08923b7bc410ad8.js",
+    "revision": "08db7cb2a857ba1f2b3ce81fe77767f7"
   },
   {
-    "url": "manifest.c739f99e.json",
-    "revision": "64b460ea29d44eeff590258be5d41154"
+    "url": "/_nuxt/manifest.6ab63c2d.json",
+    "revision": "84d1989608ef2fcbe754326d64b7800a"
   },
   {
-    "url": "nuxt.bundle.712cffab1eb947a2acb2.js",
-    "revision": "bca3949ef3ce2e1acfefed1894320676"
+    "url": "/_nuxt/nuxt.bundle.c2891fc3cfc6259cd4cb.js",
+    "revision": "3b29f0fe6fe96ca1b69f7d9d0c2ec633"
   },
   {
-    "url": "server-bundle.json",
-    "revision": "68bcf422e23d0d30d606b7501b64f53e"
+    "url": "/_nuxt/vendor.bundle.dfb46a9ca7ab55fafd92.js",
+    "revision": "debb882714d7e39e80d5c869425ceee5"
   },
   {
-    "url": "vendor.bundle.d3678e03ca7022e4bc7f.js",
-    "revision": "ef92231794c6710e3d5ed115a39c79c7"
+    "url": "/_nuxt/vue-ssr-client-manifest.json",
+    "revision": "75689d78b15f37742e3aa5f6a9475069"
   }
 ];
 
 const workboxSW = new self.WorkboxSW({
-  "cacheId": "vuecms_0.1.0",
+  "cacheId": "baptistedebever_0.1.0",
+  "clientsClaim": true,
   "directoryIndex": "/"
 });
 workboxSW.precache(fileManifest);
-workboxSW.router.registerRoute('/\/_nuxt\/.*/', workboxSW.strategies.cacheFirst({}), 'GET');
-workboxSW.router.registerRoute('/\/.*/', workboxSW.strategies.networkFirst({}), 'GET');
+workboxSW.router.registerRoute('/**', workboxSW.strategies.networkFirst({}), 'GET');
+workboxSW.router.registerRoute('/_nuxt/**', workboxSW.strategies.cacheFirst({}), 'GET');
