@@ -27,21 +27,21 @@
           portfolioElements: [
             {
               name: 'Mushin',
-              description: 'Mushin is a fast-growing French tech-startup who recently won an award at the VivaTech contest. This website was built from scratch in collaboration with a designer.',
+              description: 'Mushin is a fast-growing French tech-startup who recently won an award at the VivaTech contest. This website was built from scratch using best practices, as the objective number one was the speed - I worked in collaboration with a designer.',
               identifiant: 'mushin',
               categories: ['website', 'startup'],
               link: 'https://mymushin.com'
             },
             {
               name: 'Raphaële Fabre',
-              description: 'acilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit',
+              description: 'Website built using Wordpress for a Lawyer - I acted as a consultant more than a developer.',
               identifiant: 'fabre',
               categories: ['website', 'avocat'],
               link: 'https://rfabre-avocat.fr'
             },
             {
               name: 'Clémence & Margaux',
-              description: 'acilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit',
+              description: 'First eCommerce website built from scratch during my internship - using an internal MVC PHP Framework.',
               identifiant: 'infitex',
               categories: ['website', 'avocat'],
               link: 'https://clemence-margaux.com'

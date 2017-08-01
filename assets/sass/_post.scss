@@ -5,7 +5,7 @@
     display:block;
     height:150px;
     background: no-repeat center;
-    background-size:cover;
+    background-size:90%;
     margin-bottom:10px;
     width:100%;
   }
@@ -23,7 +23,10 @@
 
 article {
   margin: 40px auto;
-  h2, h3, p, pre, span {
+  h2, h3, p, pre, span, ul li {
     text-align:left;
+  }
+  img {
+    max-width:100%;
   }
 }

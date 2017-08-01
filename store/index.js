@@ -28,7 +28,7 @@ const makeStore = () => {
             slug: 'fresh-new-website',
             title: 'How did I build my new website ?',
             created_at: '07/27/2017',
-            image: 'mushin-portfolio.jpg',
+            image: 'vue-js-build.png',
             categories: ['web development'],
             meta: {
               id: 1,
@@ -38,13 +38,15 @@ const makeStore = () => {
           },
           {
             id: 2,
-            slug: 'foo-bar',
-            title: 'Foo Bar',
-            created_at: '10/18/2016',
+            slug: '3-month-sf9',
+            title: 'First 3 months at StudioForty9',
+            created_at: '8/1/2017',
+            image: 'sf9-logo.png',
+            categories: ['internship'],
             meta: {
               id: 2,
-              name: 'Foo Bar',
-              content: 'Foo Bar'
+              name: 'First 3 months at StudioForty9',
+              content: 'First 3 months at StudioForty9'
             }
           }
         ]})
