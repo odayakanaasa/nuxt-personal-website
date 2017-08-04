@@ -1,5 +1,5 @@
 <template>
-  <resume />
+
 </template>
 
 <script>

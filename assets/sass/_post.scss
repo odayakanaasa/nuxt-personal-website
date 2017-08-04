@@ -1,6 +1,7 @@
 .post {
   padding:0 ;
   display:block;
+  margin:20px 0;
   .image-post {
     display:block;
     height:150px;
@@ -28,5 +29,17 @@ article {
   }
   img {
     max-width:100%;
+  }
+}
+
+.page-blog {
+  h1 {
+    padding-top:16px;
+  }
+  .post {
+    min-height:350px;
+    .image-post {
+      height:200px;
+    }
   }
 }

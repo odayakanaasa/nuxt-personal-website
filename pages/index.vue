@@ -22,7 +22,7 @@
             <ul class="info">
               <li><span class="first-block">Name: </span><span class="second-block">Baptiste Debever</span></li>
               <li><span class="first-block">Phone:</span><span class="second-block">+33 6 19 65 93 52</span></li>
-              <li><span class="first-block">Email:</span><span class="second-block">me@baptistedebever.co</span></li>
+              <li><span class="first-block">Email:</span><span class="second-block">hello@baptistedebever.co</span></li>
               <li><span class="first-block">Country:</span><span class="second-block">France</span></li>
             </ul>
           </div>

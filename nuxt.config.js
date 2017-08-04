@@ -67,7 +67,7 @@ module.exports = {
   plugins: [],
   modules: [
     '@nuxtjs/font-awesome',
-    //'@nuxtjs/sitemap',
+    '@nuxtjs/sitemap',
    '@nuxtjs/pwa',
     /* ['@nuxtjs/google-analytics', { ua: 'YOUR_ANALYTICS_ID' }], */
     ['@nuxtjs/markdownit', { html: true, linkify: true, breaks: true }]
@@ -80,6 +80,6 @@ module.exports = {
     short_name: "BD",
     description: "Baptiste Debever's personal website",
     theme_color: '#FF5543',
-    //start_url: '/'
+    start_url: '/'
   }
 }

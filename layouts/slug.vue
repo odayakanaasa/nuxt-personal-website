@@ -12,6 +12,7 @@
 
     </article>
 
+    <cta></cta>
     <footerNuxt></footerNuxt>
 
   </div>
@@ -21,10 +22,11 @@
   import Social from '~/components/Social.vue'
   import HeaderMenu from '~/components/Header.vue'
   import FooterNuxt from '~/components/Footer.vue'
+  import Cta from '~/components/Cta.vue'
 
   export default {
     components: {
-      Social, HeaderMenu, FooterNuxt
+      Social, HeaderMenu, FooterNuxt, Cta
     },
     fetch ({store, params}) {
       store.dispatch('getPosts')
