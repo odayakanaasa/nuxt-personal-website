@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="row margin-top-40">
-                <div v-for="skill in offers" class="col-md-4 text-center">
+                <div v-for="skill in offers" class="col-lg-4 text-center">
                     <div class="feature-card skills">
                         <span class="icon" v-bind:style="{backgroundImage: 'url(/img/' + skill.icon + '.svg)'}"></span>
                         <div class="feature-copy">

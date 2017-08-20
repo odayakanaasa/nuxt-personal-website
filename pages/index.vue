@@ -26,7 +26,7 @@
               <li><span class="first-block">Country:</span><span class="second-block">France</span></li>
             </ul>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 mt-sm-1">
             <h4>Hello There!</h4>
             <p>I am a 3rd-year French <b>Engineering and Managerial Student</b> at ITEEM - Centrale Lille. Keen on IT, innovations and web-related technologies, dedicated, enlightened and determined, I am also a self-taught guy who keep learning and never fed up.</p>
             <p>I split my spare time between learning, reading, being a <b>freelance Web Developer and Consultant</b>, hanging out with friends, and a bit of fun (sport, series, etc.).</p>
