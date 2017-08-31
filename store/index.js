@@ -38,7 +38,7 @@ const makeStore = () => {
           },
           {
             id: 2,
-            slug: '3-month-sf9',
+            slug: '3-months-sf9',
             title: 'First 3 months at StudioForty9',
             created_at: '8/1/2017',
             image: 'sf9-logo.png',

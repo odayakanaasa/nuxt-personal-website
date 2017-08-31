@@ -3,23 +3,26 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Baptiste Debever\'s personal website',
+    title: 'Baptiste Debever\'s | Full-stack web developer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Baptiste Debever - I am an Engineering Managerial Student, but also Full-Stack Web Developer and Freelance.' }
+      { hid: 'description', name: 'description', content: 'Engineering Managerial Student, expected to get my degree in 2019 - Full-Stack Web Developer and Freelancer during my spare time. I love wandering around the web.' },
+      { property: 'og:locale', content: 'en_US' },
+      { property: 'og:title', content: 'Baptiste Debever\'s | Full-stack web developer' },
+      { property: 'og:description', content: 'Baptiste Debever\'s | Full-stack web developer' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' },
-      { rel: 'stylesheet', href: '/css/app.min.css' }
+      { rel: 'stylesheet', href: 'css/app.min.css' }
     ]
   },
   generate: {
     routes: [
       '/',
-      '/hello-static-blogging',
-      '/about'
+      '/fresh-new-website',
+      '/3-months-sf9'
     ]
   },
   /*
@@ -68,8 +71,8 @@ module.exports = {
   modules: [
     '@nuxtjs/font-awesome',
     '@nuxtjs/sitemap',
-   '@nuxtjs/pwa',
-    /* ['@nuxtjs/google-analytics', { ua: 'YOUR_ANALYTICS_ID' }], */
+    '@nuxtjs/pwa',
+    ['@nuxtjs/google-analytics', { ua: 'UA-79931702-3' }],
     ['@nuxtjs/markdownit', { html: true, linkify: true, breaks: true }]
   ],
   /*

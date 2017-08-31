@@ -19,17 +19,20 @@
         </div>
         <div class="row margin-top-40">
           <div class="col-md-4">
-            <ul class="info">
+            <ul class="info mb-lg-3">
               <li><span class="first-block">Name: </span><span class="second-block">Baptiste Debever</span></li>
               <li><span class="first-block">Phone:</span><span class="second-block">+33 6 19 65 93 52</span></li>
               <li><span class="first-block">Email:</span><span class="second-block">hello@baptistedebever.co</span></li>
               <li><span class="first-block">Country:</span><span class="second-block">France</span></li>
             </ul>
+            <a href="#" class="btn btn-primary mt-3">More details in my Resume</a>
           </div>
           <div class="col-md-8 mt-sm-1">
             <h4>Hello There!</h4>
-            <p>I am a 3rd-year French <b>Engineering and Managerial Student</b> at ITEEM - Centrale Lille. Keen on IT, innovations and web-related technologies, dedicated, enlightened and determined, I am also a self-taught guy who keep learning and never fed up.</p>
-            <p>I split my spare time between learning, reading, being a <b>freelance Web Developer and Consultant</b>, hanging out with friends, and a bit of fun (sport, series, etc.).</p>
+            <p>I am a self-made full-stack web developer - born and brought up in a lovely town in the North of France. I'm currently studying for a 5-year master degree in <b>Engineering and Managerial</b> at ITEEM - Centrale Lille, expected to graduate in 2019.
+              Keen on IT, innovations and web-related technologies, dedicated, enlightened and determined, I am a self-taught guy who keep learning and never fed up and who's always looking to work on a meaningful project!</p>
+            <p>I split my spare time between learning, reading, being a <b>freelance Web Developer and Consultant</b> and a bit of fun (sport, series, etc.).</p>
+            <p></p>
             <social />
           </div>
         </div>
@@ -42,7 +45,7 @@
       <div class="row">
         <div v-for="post in posts" class="col-md-6 text-center">
           <router-link class="feature-card post" :to="{ name: 'slug', params: { slug: post.slug }}">
-            <div class="image-post" v-bind:style="{backgroundImage: 'url(/img/' + post.image + ')'}"></div>
+            <div class="image-post" v-bind:style="{backgroundImage: 'url(img/' + post.image + ')'}"></div>
             <div class="content">
               <h4>{{post.title}}</h4>
               <div class="add-info">

@@ -45,6 +45,7 @@ nav {
         a {
           color: $brand-black;
           position:relative;
+          margin-right: 15px;
           &:after {
             content: '';
             display: block;
@@ -87,5 +88,11 @@ nav {
       }
     }
   }
+}
+
+.logo {
+  width: auto;
+  height: 2.2em;
+  margin-right: 2em;
 }
 
