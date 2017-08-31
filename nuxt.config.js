@@ -53,7 +53,7 @@ module.exports = {
     ],
     /*
     ** Run ESLINT on save
-  */
+
     extend (config, ctx) {
       if (ctx.isClient) {
         config.module.rules.push({
@@ -63,7 +63,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    }*/
   },
   css: [
   ],
