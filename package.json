@@ -37,7 +37,6 @@
     "@nuxtjs/font-awesome": "^1.0.1",
     "@nuxtjs/google-analytics": "latest",
     "@nuxtjs/markdownit": "^1.1.2",
-    "babel-eslint": "^7.1.1",
     "marked": "^0.3.6",
     "vue-style-loader": "^3.0.1"
   }
