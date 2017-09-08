@@ -22,7 +22,8 @@ module.exports = {
     routes: [
       '/',
       '/fresh-new-website',
-      '/3-months-sf9'
+      '/3-months-sf9',
+      '/.well-known/acme-challenge/gSA9L6JgFekdjy997pZCIVcHVgeBtQoIUSA1H4OEIuU'
     ]
   },
   /*
