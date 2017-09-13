@@ -12,6 +12,13 @@
   border-radius:0.5em;
   cursor:pointer;
   padding:2em 1em;
+  &.skills {
+    height:330px;
+    margin-bottom: 30px;
+    p {
+      font-size: 0.9em;
+    }
+  }
   &:hover, &:active, &:focus {
     outline:0;
     -webkit-transform: translateY(-5px);
@@ -44,9 +51,4 @@
     margin:auto;
     background-size: 60px;
   }
-}
-
-.skills {
-  height:310px;
-  margin-bottom: 30px;
 }

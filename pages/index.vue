@@ -5,7 +5,7 @@
         <div class="row row-pt-sm">
           <div class="col-md-12 text-left">
             <p class="label typed-element"></p>
-            <h1>I'm a student, freelancer and web developer, making and learning things on the web.</h1>
+            <h1 class="h2">I'm a student and freelancer, making and learning things on the web.</h1>
           </div>
         </div>
       </div>
@@ -18,16 +18,16 @@
           </div>
         </div>
         <div class="row margin-top-40">
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <ul class="info mb-lg-3">
               <li><span class="first-block">Name: </span><span class="second-block">Baptiste Debever</span></li>
               <li><span class="first-block">Phone:</span><span class="second-block">+33 6 19 65 93 52</span></li>
               <li><span class="first-block">Email:</span><a class="second-block" href="mailto:baptiste@debever.co">baptiste@debever.co</a></li>
               <li><span class="first-block">Country:</span><span class="second-block">France</span></li>
             </ul>
-            <a href="#" class="btn btn-primary mt-3">More details in my Resume</a>
+            <a href="#" class="btn btn-primary mt-3">Resume</a>
           </div>
-          <div class="col-md-8 mt-sm-1">
+          <div class="col-lg-8 mt-sm-5">
             <h4>Hello There!</h4>
             <p>I am a self-made full-stack web developer - born and brought up in a lovely town in the North of France. I'm currently studying for a 5-year master degree in <b>Engineering and Managerial</b> at ITEEM - Centrale Lille, expected to graduate in 2019.
               Keen on IT, innovations and web-related technologies, dedicated, enlightened and determined, I am a self-taught guy who keep learning and never fed up and who's always looking to work on a meaningful project!</p>
