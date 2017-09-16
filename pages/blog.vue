@@ -4,7 +4,7 @@
         <h1 class="mt-2 text-center">Some of my thoughts</h1>
 
         <section class="recent-posts container">
-            <div class="row">
+            <div class="row justify-content-center text-center section-block">
                 <div v-for="post in posts" class="col-md-10 push-md-1 text-center">
                     <router-link class="feature-card post" :to="{ name: 'slug', params: { slug: post.slug }}">
                         <div class="image-post" v-bind:style="{backgroundImage: 'url(img/' + post.image + ')'}"></div>

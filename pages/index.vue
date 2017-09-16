@@ -25,9 +25,9 @@
               <li><span class="first-block">Email:</span><a class="second-block" href="mailto:baptiste@debever.co">baptiste@debever.co</a></li>
               <li><span class="first-block">Country:</span><span class="second-block">France</span></li>
             </ul>
-            <a href="#" class="btn btn-primary mt-3">Resume</a>
+            <a href="#" class="btn btn-primary mt-3">Fresh Resume coming soon</a>
           </div>
-          <div class="col-lg-8 mt-sm-5">
+          <div class="col-lg-8 mt-sm-5 mt-md-0">
             <h4>Hello There!</h4>
             <p>I am a self-made full-stack web developer - born and brought up in a lovely town in the North of France. I'm currently studying for a 5-year master degree in <b>Engineering and Managerial</b> at ITEEM - Centrale Lille, expected to graduate in 2019.
               Keen on IT, innovations and web-related technologies, dedicated, enlightened and determined, I am a self-taught guy who keep learning and never fed up and who's always looking to work on a meaningful project!</p>

@@ -1,4 +1,5 @@
-## Redirect http to https
+## Redirect http to https for Heroku
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
