@@ -45,25 +45,10 @@ gulp.task('sass', function () {
 
 })
 
-/*
- * JS MERGE
- */
-gulp.task('js', function () {
-  // returns a Node.js stream, but no handling of error messages
-  return gulp.src([
-    assetPath + 'js/*.js',
-    './node_modules/bootstrap/dist/js/bootstrap.min.js'
-  ])
-    .pipe(concat('app.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(publicPath + 'js/'))
-})
-
 
 /*
  * Command 'gulp watch'
  */
 gulp.task('watch', function () {
   gulp.watch(assetPath + 'sass/*.scss', ['sass']);
-  gulp.watch(assetPath + 'js/*.js', ['js']);
 })

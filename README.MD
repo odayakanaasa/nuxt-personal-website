@@ -1,3 +1,12 @@
 # Personal Website Repository
 
-This website was built using <a href='https://vuejs.org/'>Vue.js</a> and <a href='https://nuxtjs.org/'>Nuxt.js</a>.
+This website was built using Vue.js and Nuxt.js.
+
+### Setup
+
+- Clone the repo
+- `cd` your directory
+- run `npm install`
+- and then, run `npm run dev` along with `gulp watch` for any asset modification
+
+That's it! Easy peasy, isn't it? 

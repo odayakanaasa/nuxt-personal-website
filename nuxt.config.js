@@ -15,6 +15,9 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: 'favicon-96x96.png' },
+      { rel: 'icon', type: 'image/png', href: 'android-icon-96x96.png' },
+      { rel: 'apple-touch-icon', href: 'apple-icon-114x114.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' },
       { rel: 'stylesheet', href: 'css/app.min.css' }
     ]

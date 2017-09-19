@@ -27,10 +27,10 @@
             </ul>
             <a href="#" class="btn btn-primary mt-3">Fresh Resume coming soon</a>
           </div>
-          <div class="col-lg-8 mt-sm-5 mt-md-0">
+          <div class="col-lg-8 mt-5 mt-md-0">
             <h4>Hello There!</h4>
             <p>I am a self-made full-stack web developer - born and brought up in a lovely town in the North of France. I'm currently studying for a 5-year master degree in <b>Engineering and Managerial</b> at ITEEM - Centrale Lille, expected to graduate in 2019.
-              Keen on IT, innovations and web-related technologies, dedicated, enlightened and determined, I am a self-taught guy who keep learning and never fed up and who's always looking to work on a meaningful project!</p>
+              Keen on IT, innovations and web-related technologies, dedicated, enlightened and determined, I am a self-taught guy who keeps learning and never fed up and who's always looking to work on a meaningful project!</p>
             <p>I split my spare time between learning, reading, being a <b>freelance Web Developer and Consultant</b> and a bit of fun (sport, series, etc.).</p>
             <p></p>
             <social />
