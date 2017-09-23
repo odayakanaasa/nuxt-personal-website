@@ -25,6 +25,9 @@
         activeArrow: 'gototop js-top active',
         date: '',
       }
+    },
+    mounted () {
+      this.date = new Date().getFullYear()
     }
   }
 </script>

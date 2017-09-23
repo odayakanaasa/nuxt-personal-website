@@ -37,7 +37,6 @@
     },
     mounted () {
       window.addEventListener('scroll', this.handleScroll)
-      this.date = new Date().getFullYear()
     },
     destroyed () {
       window.removeEventListener('scroll', this.handleScroll)
