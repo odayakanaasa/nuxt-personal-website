@@ -22,7 +22,7 @@
             <ul class="info mb-lg-3">
               <li><span class="first-block">Name: </span><span class="second-block">Baptiste Debever</span></li>
               <li><span class="first-block">Phone:</span><span class="second-block">+33 6 19 65 93 52</span></li>
-              <li><span class="first-block">Email:</span><a class="second-block" href="mailto:baptiste@debever.co">baptiste@debever.co</a></li>
+              <li><span class="first-block">Email:</span><a class="second-block" href="mailto:baptiste.debever@gmail.com">baptiste.debever@gmail.com</a></li>
               <li><span class="first-block">Country:</span><span class="second-block">France</span></li>
             </ul>
             <a href="#" class="btn btn-primary mt-3">Fresh Resume coming soon</a>
