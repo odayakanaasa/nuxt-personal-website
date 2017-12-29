@@ -2,6 +2,8 @@
 
 This website was built using Vue.js and Nuxt.js.
 
+Hosted at: http://baptiste.debever.co
+
 ### Setup
 
 - Clone the repo
@@ -9,4 +11,4 @@ This website was built using Vue.js and Nuxt.js.
 - run `npm install`
 - and then, run `npm run dev` along with `gulp watch` for any asset modification
 
-That's it! Easy peasy, isn't it? 
+That's it! Easy peasy, isn't it?
