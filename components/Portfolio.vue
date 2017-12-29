@@ -7,11 +7,13 @@
                 </div>
             </div>
             <div class="row portfolio-results margin-top-40">
-                <div v-for="element in portfolioElements" class="col-md-4 text-center col-padding">
-                    <a :href="element.link" class="work" v-bind:id="element.identifiant" target="_blank">
+                <div v-for="element in portfolioElements"
+                    :key="element.id"
+                    class="col-md-4 text-center col-padding">
+                    <a :href="element.link" class="work" :id="element.id" target="_blank">
                         <div class="desc">
-                            <h3>{{ element.name }}</h3>
-                            <span>{{ element.description }}</span>
+                            <h3 v-text="element.name"></h3>
+                            <span v-text="element.description"></span>
                         </div>
                     </a>
                 </div>
@@ -26,23 +28,30 @@
         return {
           portfolioElements: [
             {
+              name: 'StudioForty9 Cross-Sell Recommendations API',
+              description: 'This was one of my project I set out during my 8-month internship in Ireland.',
+              id: 'sf9-recommendation',
+              categories: ['api', 'laravel'],
+              link: 'https://mymushin.com'
+            },
+            {
               name: 'Mushin',
               description: 'Mushin is a fast-growing French tech-startup who recently won an award at the VivaTech contest. This website was built from scratch using best practices, as the objective number one was the speed - I worked in collaboration with a designer.',
-              identifiant: 'mushin',
+              id: 'mushin',
               categories: ['website', 'startup'],
               link: 'https://mymushin.com'
             },
             {
               name: 'Raphaële Fabre',
               description: 'Website built using Wordpress for a Lawyer - I acted as a consultant more than a developer.',
-              identifiant: 'fabre',
+              id: 'fabre',
               categories: ['website', 'avocat'],
               link: 'https://rfabre-avocat.fr'
             },
             {
               name: 'Clémence & Margaux',
               description: 'First eCommerce website built from scratch during my internship - using an internal MVC PHP Framework.',
-              identifiant: 'infitex',
+              id: 'infitex',
               categories: ['website', 'avocat'],
               link: 'https://clemence-margaux.com'
             }

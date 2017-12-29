@@ -38,16 +38,17 @@
         </div>
       </div>
     </section>
+
     <services />
     <portfolio />
 
     <section class="recent-posts container">
       <div class="row">
-        <div v-for="post in posts" class="col-md-6 text-center">
+        <div v-for="post in posts" :key="post.slug" class="col-md-6 text-center">
           <router-link class="feature-card post" :to="{ name: 'slug', params: { slug: post.slug }}">
-            <div class="image-post" v-bind:style="{backgroundImage: 'url(img/' + post.image + ')'}"></div>
+            <div class="image-post" :style="{ backgroundImage: `url(img/${post.image})` }"></div>
             <div class="content">
-              <h4>{{post.title}}</h4>
+              <h4 v-text="post.title"></h4>
               <div class="add-info">
                 <span class="created-at" v-html="post.created_at"></span>
                 &nbsp;&nbsp;<i class="fa fa-tags"></i>&nbsp;

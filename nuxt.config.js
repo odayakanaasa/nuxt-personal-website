@@ -1,5 +1,5 @@
 module.exports = {
-  serverMiddleware: [ 'redirect-ssl' ],
+  //serverMiddleware: [ 'redirect-ssl' ],
   /*
   ** Headers of the page
   */
@@ -24,7 +24,6 @@ module.exports = {
   },
   generate: {
     routes: [
-      '/',
       '/fresh-new-website',
       '/3-months-sf9'
     ]
