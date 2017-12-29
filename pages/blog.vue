@@ -6,8 +6,8 @@
         <section class="recent-posts container">
             <div class="row justify-content-center text-center section-block">
                 <div v-for="post in posts" class="col-md-10 push-md-1 text-center">
-                    <router-link class="feature-card post" :to="{ name: 'slug', params: { slug: post.slug }}">
-                        <div class="image-post" v-bind:style="{backgroundImage: 'url(img/' + post.image + ')'}"></div>
+                    <router-link class="featured-card post" :to="{ name: 'slug', params: { slug: post.slug }}">
+                        <div class="image-post" :style="{backgroundImage: 'url(img/' + post.image + ')'}"></div>
                         <div class="content">
                             <h4>{{post.title}}</h4>
                             <div class="add-info">

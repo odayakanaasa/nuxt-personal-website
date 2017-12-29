@@ -1,0 +1,73 @@
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: darken($brand-white, 70%);
+    background: #fff;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px !important;
+        max-width: 100%;
+    }
+}
+
+a {
+    color: $brand-primary;
+    @include transition(.5s);
+    &:hover,
+    &:active,
+    &:focus {
+        color: $brand-primary;
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+    //color: $brand-black;
+    font-family: $font-primary !important;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+::-webkit-selection {
+    color: $brand-white;
+    background: $brand-primary;
+}
+
+::-moz-selection {
+    color: $brand-white;
+    background: $brand-primary;
+}
+
+::selection {
+    color: $brand-white;
+    background: $brand-primary;
+}
+
+.label {
+    font-size: .875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $brand-red;
+}
+
+.animate-box {
+    .js & {
+        opacity: 0;
+    }
+}
